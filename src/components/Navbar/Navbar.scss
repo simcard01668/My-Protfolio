@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #0c0c1d;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    border: 1px solid white;
+
+    .menu-toggle {
+    
+    }
+
+    .wrapper {
+        display: flex;
+        max-width: 1366px;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+        span{
+            font-weight: bold;
+        }
+
+        .social{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

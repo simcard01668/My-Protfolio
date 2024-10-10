@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar/Sidebar'
 import { Facebook, GitHub, Instagram, LinkedIn, YouTube } from '@mui/icons-material'
 
 const Navbar = () => {
-    const [ show, setShow ] = useState(false)
+    const [ show, setShow ] = useState(true)
   return (
     <div className='navbar'>
         {/* <button className='menu-toggle' onClick={()=>setShow(!show)}>Click me</button> */}

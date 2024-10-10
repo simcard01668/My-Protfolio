@@ -6,15 +6,15 @@ function App() {
 
   return (
     <div>
-      {/* <section><Navbar /></section>
+      <section><Navbar /></section>
+      <section id="Home">Parallex</section>
+      <section id="Works">Service</section>
       <section>Parallex</section>
-      <section>Service</section>
-      <section>Parallex</section>
-      <section>Portfolio</section>
+      <section id="experience">Portfolio</section>
       <section>Protfolio</section>
       <section>Protfolio</section>
-      <section>Contact</section> */}
-      <Test />
+      <section id="Contact">Contact</section>
+      {/* <Test /> */}
     </div>
   )
 }

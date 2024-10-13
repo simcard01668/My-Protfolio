@@ -1,6 +1,8 @@
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #4b4b4b #0c0c1d;
 }
 
 *{

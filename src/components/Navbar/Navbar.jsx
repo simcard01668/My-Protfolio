@@ -2,15 +2,14 @@ import React, { useState } from 'react'
 import './Navbar.scss'
 import Sidebar from '../Sidebar/Sidebar'
 import { Facebook, GitHub, Instagram, LinkedIn, YouTube } from '@mui/icons-material'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
-    const [ show, setShow ] = useState(true)
   return (
     <div className='navbar'>
-        {/* <button className='menu-toggle' onClick={()=>setShow(!show)}>Click me</button> */}
-        {show && <Sidebar />}
+        <Sidebar />
         <div className="wrapper">
-            <span>Isaac Yam</span>
+            <motion.span initial={{scale: 0}} animate={{scale:1}} transition={{duration: 1}}>Isaac Yam's Profolio Page</motion.span>
             <div className="social">
                 <a href=""><Facebook /></a>
                 <a href=""><YouTube /></a>

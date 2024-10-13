@@ -1,0 +1,98 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+
+  .wrapper {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+
+    .textContainer {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 60px;
+      width: 50%;
+
+      h2 {
+        font-size: 30px;
+        color: rgb(208, 59, 208);
+        letter-spacing: 2px;
+      }
+
+      h1 {
+        font-size: 60px;
+        color: white;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 20px;
+
+        button {
+          padding: 20px;
+          border: 1px solid white;
+          border-radius: 10px;
+          background: transparent;
+          color: white;
+          cursor: pointer;
+        }
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .imageContainer {
+    position: absolute;
+    top: 100px;
+    height: 100%;
+    right: 0;
+    display: flex;
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 40vh;
+    bottom: -100px;
+    white-space: nowrap;
+    color: #ffffff12;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .imageContainer {
+      display: none;
+    }
+
+    .wrapper {
+      max-width: 100%;
+
+      .textContainer {
+        width: 100%;
+        align-items: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      
+      h1{
+        text-align: center;
+      }
+    }
+
+    .slidingTextContainer {
+      font-size: 20vh;
+      bottom: 0;
+    }
+  }
+
+}
